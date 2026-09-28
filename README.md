@@ -24,7 +24,7 @@ Like all good software engineering we’re zero indexed! In this step you’re g
 
 I’ll leave you to setup your IDE / editor of choice and programming language of choice. After that here’s what I’d like you to do to be ready to test your solution.
 
-Download this text and save it as test.txt.
+Download this [text](https://github.com/goksuuludag/wctool/blob/master/test.txt) and save it as test.txt.
 
 Step One
 In this step your goal is to write a simple version of wc, let’s call it ccwc (cc for Coding Challenges) that takes the command line option -c and outputs the number of bytes in a file.
