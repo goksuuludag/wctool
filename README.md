@@ -14,7 +14,7 @@ You can read more about the Unix Philosophy in the excellent book The Art of Uni
 The Challenge - Building wc
 The functional requirements for wc are concisely described by it’s man page - give it a go in your local terminal now:
 
->man wc
+    man wc
 
 The TL/DR version is: wc – word, line, character, and byte count. You can see the result in action in the video below:
 
@@ -31,8 +31,8 @@ In this step your goal is to write a simple version of wc, let’s call it ccwc 
 
 If you’ve done it right your output should match this:
 
->ccwc -c test.txt
-  342190 test.txt
+    ccwc -c test.txt
+    342190 test.txt
 
 If it doesn’t, check your code, fix any bugs and try again. If it does, congratulations! On to…
 
@@ -41,7 +41,7 @@ In this step your goal is to support the command line option -l that outputs the
 
 If you’ve done it right your output should match this:
 
->ccwc -l test.txt
+    ccwc -l test.txt
     7145 test.txt
 
 If it doesn’t, check your code, fix any bugs and try again. If it does, congratulations! On to…
@@ -49,8 +49,8 @@ If it doesn’t, check your code, fix any bugs and try again. If it does, congra
 Step Three
 In this step your goal is to support the command line option -w that outputs the number of words in a file. If you’ve done it right your output should match this:
 
->ccwc -w test.txt
-   58164 test.txt
+    ccwc -w test.txt
+    58164 test.txt
 
 If it doesn’t, check your code, fix any bugs and try again. If it does, congratulations! On to…
 
@@ -61,18 +61,18 @@ You can learn more about programming for locales here.
 
 For this one your answer will depend on your locale, so if can, use wc itself and compare the output to your solution:
 
->wc -m test.txt
-  339292 test.txt
+    wc -m test.txt
+    339292 test.txt
 
->ccwc -m test.txt
-  339292 test.txt
+    ccwc -m test.txt
+    339292 test.txt
 
 If it doesn’t, check your code, fix any bugs and try again. If it does, congratulations! On to…
 
 Step Five
 In this step your goal is to support the default option - i.e. no options are provided, which is the equivalent to the -c, -l and -w options. If you’ve done it right your output should match this:
 
->ccwc test.txt
+    ccwc test.txt
     7145   58164  342190 test.txt
 
 If it doesn’t, check your code, fix any bugs and try again. If it does, congratulations! On to…
@@ -80,7 +80,7 @@ If it doesn’t, check your code, fix any bugs and try again. If it does, congra
 The Final Step
 In this step your goal is to support being able to read from standard input if no filename is specified. If you’ve done it right your output should match this:
 
->cat test.txt | ccwc -l
+    cat test.txt | ccwc -l
     7145
 
 If it doesn’t, check your code, fix any bugs and try again. If it does, congratulations! You’ve done it, pat yourself on the back, job well done!
